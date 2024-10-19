@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array sorting and mapping in JavaScript </title>
+</head>
+<body>
+<center>
+<h1>Mapping in Javascript</h1>
+</center>
+<p>We will add every number by 19</p>
+<p id="result"></p>
+<p id="points"></p>
+<script>
+var numbers=[45,70,778,56,97,27,62]
+function myFunction(num){
+    return num + 19;
+}
+var newarray1=numbers.map(myFunction);
+document.getElementById("result").innerHTML=newarray1;
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array sorting and mapping in JavaScript </title>
+</head>
+<body>
+<center>
+<h1>Ascending and Descending Order </h1>
+</center>
+<p>We are sorting numbers in Ascending and Descending</p>
+<button onclick="ascending()">Ascending Order</button>
+<button onclick="descending()">Descending Order</button>
+<P id="result"></p>
+
+<script>
+var points=[40,100,1,5,25,10,90,48,67,290,64,29,398]
+document.getElementById("result").innerHTML=points;
+function ascending(){
+points.sort(function(a,b) {return a-b});
+document.getElementById("result").innerHTML=points;
+}
+function descending(){
+points.sort(function(a,b) {return b-a});
+document.getElementById("result").innerHTML=points;
+}
+var cousins=["Aroosh","Ayesha","Fatima","Anabia","Urwa","Irha","Eileen"]
+document.write(cousins.sort())
+document.write("<br>")
+var cousins=["Aroosh","Ayesha","Fatima","Anabia","Urwa","Irha","Eileen"]
+document.write(cousins.reverse())
+</script>
+</body>
+</html>
